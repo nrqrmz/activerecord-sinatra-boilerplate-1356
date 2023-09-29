@@ -1,0 +1,12 @@
+<h1>My restaurants app</h1>
+<h2>This is the list of my favorite restaurants</h2>
+
+<ol>
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <a href="/restaurants/<%= restaurant.id %>">
+        <%= restaurant.name %>
+      </a>
+    </li>
+  <% end %>
+</ol>
